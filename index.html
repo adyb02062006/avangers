@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+
+<button onclick="left()"><img src="17.jpg" height="250" width="250"/></button>
+     <button><img id="fgh" src="11.jpg" height="400"/></button>
+    <button onclick="right()"><img src="16.jpg" height="250" width="250"/></button>
+</center>
+<script>
+    i=1
+    function left() {
+        i-=1
+        if (i==0){
+            i=5
+        }
+        if(i==1) {
+            document.getElementById("fgh").src = '11.jpg'
+        }
+        else if (i==2) {
+            document.getElementById("fgh").src = "12.jpg"
+        }
+        else if (i==3){
+            document.getElementById("fgh").src = "13.jpg"
+        }
+            else if (i==4){
+            document.getElementById("fgh").src = "14.jpg"
+        }
+        else if  (i==5){
+                document.getElementById("fgh").src = "15.jpeg"
+        }
+    }
+    function right() {
+        i+=1
+        if(i==6){
+            i=1
+        }
+         if(i==1) {
+            document.getElementById("fgh").src = '11.jpg'
+        }
+        else if (i==2) {
+            document.getElementById("fgh").src = "12.jpg"
+        }
+        else if (i==3){
+            document.getElementById("fgh").src = "13.jpg"
+        }
+            else if (i==4){
+            document.getElementById("fgh").src = "14.jpg"
+        }
+        else if  (i==5){
+                document.getElementById("fgh").src = "15.jpeg"
+        }
+    }
+        setInterval(function(){right()},10000)
+</script>
+</body>
+</html>
